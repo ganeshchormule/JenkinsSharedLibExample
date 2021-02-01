@@ -1,4 +1,4 @@
-def call(Map config=[:], Closure body) {
+def call() {
     node {
         git url: "https://github.com/ganeshchormule/JenkinsSharedLibExample"
 
@@ -11,11 +11,10 @@ def call(Map config=[:], Closure body) {
         }
 
         stage("Deploy") {
-            if (config.deploy) {
-                bat "echo deploy"
-            }
+            
+          bat "echo deploy"
+            
         }
-
-        body()
+        
     }
 }
