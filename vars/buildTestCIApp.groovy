@@ -1,6 +1,6 @@
 def call(Map config=[:], Closure body) {
     node {
-        git url: "https://github.com/werne2j/sample-nodejs"
+        git url: "https://github.com/ganeshchormule/JenkinsSharedLibExample"
 
         stage("Install") {
             bat "echo install"
